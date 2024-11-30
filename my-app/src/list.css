@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: fix;
+}
+ul{
+    width: 100%;
+    list-style: none;
+    padding: 0 0.25rem 0.25rem;
+    
+}
+
+ul li::before{
+    content: "\200B";
+}
+
+.item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0.5rem;
+    margin: 0.25rem 0;
+    background-color: #dac9d7;
+
+}
+
+.item:first-child{
+    margin: 0;
+}
+.item input[type="checkbox"]{
+    text-align: center;
+    width: 2.5rem;
+    width: 48px;
+    min-width: 48px;
+    height: 2.5rem;
+    height: 48px;
+    min-height: 48px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    
+}
+.right{
+    background-color: #1540ce;
+}
+
+.item input[type="checkbox"]:focus + label{
+    text-decoration: underline;
+    color: #1540ce;
+}
+.item > label{
+    font-size: o.75rem;
+    flex-grow: 1;
+}
+
+.item svg{
+    width: 48px;
+    min-width: 48px;
+    height: 36px;
+    font-size: 1rem;
+    color: #1540ce;
+    cursor: progress;
+}
+
+.item svg:focus,
+.item svg:hover{
+    color: rgb(14, 9, 9);
+    outline: none;
+}
+h1,h3{
+    text-align: center;
+    background-color: #1540ce;
+    border: 5px solid #dac9d7;
+    padding: 2rem;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: center;
+}
+h3{
+    margin-top: 8%;
+    margin-bottom: 0%;
+}
+
+.addForm label{
+    position: absolute;
+    margin-left: -99999px;
+}
+.searchForm label{
+    position: absolute;
+    margin-left: -99999px;
+    display: block;
+}
+
+input{
+    padding: 2rem 30rem;
+    
+}
+.addForm{
+    position: absolute;
+    left: 5%;
+    top: 130px;
+}
+/* input{
+    padding: 2rem 10rem;
+    
+} */
+.searchForm{
+    /* position: absolute;
+    left: 30%;
+    top: 130px; */
+    margin-left: 5%;
+    margin-bottom: 5px;
+} 
+button{
+    padding: 1rem;
+    margin-left: 4px;
+}
+button:hover{
+    padding: 1.5rem;
+    
+}
+main{
+    margin-bottom: 5.5px;
+} 
